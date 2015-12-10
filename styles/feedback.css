@@ -1,0 +1,99 @@
+body {
+	color: #333;
+	background-color: #f7f7f7;
+}
+.banner {
+	height: 95px;
+	margin-top: 3px;
+}
+.banner img {
+	height: 95px;
+	width: 100%;
+}
+.panel {
+	margin-top: 5px;
+	background-color: #fff;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.panel input {
+	border: none;
+	-webkit-appearance:none;
+}
+.panel dd {
+	height: 35px;
+	line-height: 35px;
+	margin: 0 15px;
+	font-size: 14px;
+	border-bottom: 1px solid #ebebeb;
+}
+.panel dd:last-child {
+	border-bottom: none;
+}
+.panel dd label {
+	margin: 0 5px;
+}
+.cont .gm {
+	color: #b9b9b9;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+.cont .gm i {
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;    
+}
+.cont .gm i.t {
+	background-image: url(../images/timline.png);
+}
+.cont .gm i.m {
+    background-image: url(../images/mail.png);
+}
+.cont .submitBtn {
+	margin: 10px auto;
+    color: #fff;
+    border: none;
+    background-color: #be293e;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+}
+#erpId {
+	color: #999;
+}
+.tip {
+	color: #fff;
+	width: 50%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #dcdcdc;
+}
+.tip i {
+	height: 26px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+}
+.tip i.success {
+	width: 37px;
+    top: 8px;
+    background: url(../images/tip-s.png) no-repeat;
+}
+.tip i.fail {
+	width: 34px;
+    top: 8px;
+    background: url(../images/tip-f.png) no-repeat;
+}

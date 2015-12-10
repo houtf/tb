@@ -1,0 +1,129 @@
+body {
+	color: #333;
+	background-color: #f7f7f7;
+}
+.p-tab-wrap {
+	font-size: 13px;
+	background-color: #fff;
+}
+.p-tab-wrap dd {
+	width: 25%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 1px solid #ebebeb;
+}
+.p-tab-wrap dd.active {
+	color: #ffba41;
+	border-bottom: 2px solid #ffba41;
+}
+.p-tab-wrap dd i {
+	width: 10px;
+	height: 8px;
+	margin-left: 5px;
+	display: inline-block;
+	background: url(../images/list-a.png) no-repeat 0 0;
+}
+.p-tab-wrap dd i.rotate {
+	transform:rotate(180deg);
+}
+.pannel-wrap {
+	width: 100%;
+	z-index: 3;
+	position: absolute;
+	background:rgba(255,255,255,0.9);
+}
+.pannel-wrap dd {
+	display: none;
+}
+.pannel-wrap dd.active {
+	display: block;
+}
+.pannel-wrap dd p {
+	height: 35px;
+	line-height: 35px;
+	text-indent: 1.5em;
+	font-size: 13px;
+}
+.pannel-wrap dd p.active {
+	color: #ffba41;
+	background-color: #fef9ef;
+}
+.g-list {
+	margin-top: 5px;
+	padding-top: 10px;
+	background-color: #fff;
+}
+.g-list .amount {
+  color: #e4393c;
+}
+.g-list dd {
+  font-size: 13px;
+  height: 85px;
+  margin: 0 10px 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+.g-list dd:last-child {
+  border-bottom: none;
+}
+.g-list dd img {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-right: 10px;
+}
+.g-list dd .amount {
+  margin: 0 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.g-list dd .desc {
+  height: 30px;
+}
+.g-list dd .flag {
+  margin: 5px 0 6px;
+}
+.g-list dd .flag>span {
+  padding: 1px 6px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.g-list dd .flag .f1 {
+  color: #3fcf82;
+  border: 1px solid #3fcf82;
+  background-color: #f2fff1;
+}
+.g-list dd .flag .f2 {
+  color: #2ea2f4;
+  border: 1px solid #2ea2f4;
+  background-color: #f1fbff;
+}
+.g-list dd .flag .f0,.g-list dd .flag .f3 {
+  color: #fd8aca;
+  border: 1px solid #fd8aca;
+  background-color: #fff1f9;
+}
+.g-list dd del {
+  margin-left: 5px;
+}
+.cGrayD {
+  color: #696969;
+}
+.cGray {
+  color: #b0b0b0;
+}
+.overlay {
+	position: fixed;
+    top: 99px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+}
+#productList .empty {
+	text-align: center;
+	line-height: 80px;
+}

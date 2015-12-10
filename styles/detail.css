@@ -1,0 +1,60 @@
+body {
+  color: #333;
+  background-color: #f7f7f7;
+}
+#bannerSlide .swiper-pagination-bullet {
+  background-color: #bbcbcc;
+}
+#bannerSlide .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+#bannerSlide .swiper-slide img {
+  width: 100%;
+  height: 150px;
+}
+#bannerSlide .swiper-slide span {
+  position: absolute;
+  bottom: 25px;
+  z-index: 1;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+.a-bar {
+  height: 38px;
+  line-height: 38px;
+  font-size: 13px;
+  color: #999;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 5px;
+}
+.a-bar i {
+  width: 21px;
+  height: 17px;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  top: 2px;
+  background:url(../images/card.png) no-repeat 0 0;
+}
+.a-bar label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e4393c;
+}
+.a-bar del {
+  margin-left: 10px;
+}
+.a-bar .payBtn {
+  float: right;
+  color: #fff;
+  background-color: #be293e;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  height: 28px;
+  text-align: center;
+  margin: 3px 10px 0 0;
+  line-height: 28px;
+}

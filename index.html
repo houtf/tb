@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon-precomposed" href="http://st.360buyimg.com/m/images/apple-touch-icon.png?v=jd2015030522"/>
+		<title>京东团建</title>
+		<link rel="stylesheet" href="styles/lib/base.css">
+		<link rel="stylesheet" href="styles/lib/swiper.3.1.7.min.css">
+		<link rel="stylesheet" href="styles/index.css">
+	</head>
+	<body>
+		<div id="main" class="common-wrapper">
+			<nav class="nav">
+				<div class="back" onclick="backToHomePage()">
+					<i class="back-icon"></i>
+					<span class="back-txt">京东ME</span>
+				</div>
+				<div class="title">京东团建</div>
+				<div class="plan">出游计划<div class="p-icon"></div></div>
+			</nav>
+			<section class="cont">
+				<div id="bannerSlide" class="swiper-container">
+					<div class="swiper-wrapper"></div>
+					<!-- 如果需要分页器 -->
+					<div id="banner-pagination" class="swiper-pagination"></div>
+				</div>
+				<div id="broadcast" class="swiper-container"><div class="swiper-wrapper"></div></div>
+				<dl class="sx"><dd typeid="1"><div class="i1"></div><p>部门团建</p></dd><dd typeid="2"><div class="i2"></div><p>周末郊游</p></dd><dd typeid="3"><div class="i3"></div><p>每周特卖</p></dd><dd typeid="4"><div class="i4"></div><p>周边尾房</p></dd>
+				</dl>
+				<div class="bg"></div>
+				<div class="g-list">
+					<h3>推荐商品</h3>
+					<dl id="productList"></dl>
+				</div>
+			</section>
+		</div>
+		<script src="http://jdme.jd.com/open/jdme-sdk-dev.js"></script>
+		<script src="scripts/lib/zepto.js"></script>
+		<script src="scripts/lib/swiper.3.1.7.jquery.min.js"></script>
+		<script src="scripts/index.js"></script>
+	</body>
+</html>

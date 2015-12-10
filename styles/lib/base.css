@@ -1,0 +1,288 @@
+/*
+  HTML5 Reset :: style.css
+  ----------------------------------------------------------
+  We have learned much from/been inspired by/taken code where offered from:
+
+  Eric Meyer          :: http://meyerweb.com
+  HTML5 Doctor        :: http://html5doctor.com
+  and the HTML5 Boilerplate :: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  font-size: 12px;
+  font-family: Helvetica;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
+body, body:before, body:after {
+  /*max-width: 640px;*/
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+*/
+img, object, embed {
+  max-width: 100%;
+}
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   In fact, it *will* cause problems with Google Maps' controls at small size.
+  If this is the case for you, try uncommenting the following:
+
+#map img {
+        max-width: none;
+}
+*/
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+  don't forget to restore the bullets within content. */
+ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+a:active{
+    color: #fff;
+}
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input, select {
+  vertical-align: middle;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+select, input, textarea {
+  font: 99% sans-serif;
+}
+table {
+  font-size: inherit;
+  font: 100%;
+}
+small {
+  font-size: 85%;
+}
+strong {
+  font-weight: bold;
+}
+td, td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* hand cursor on clickable elements */
+.clickable, label, input[type=button], input[type=submit], input[type=file], button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+button, input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.bbox {
+  box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+}
+
+/*时尚经典*/
+.theme0 {
+  background-image: url(http://jdme.jd.com/static/jme/images/0.png);
+}
+
+/*蓝色仲夏夜*/
+.theme1 {
+  background-image: url(http://jdme.jd.com/static/jme/images/1.png);
+}
+
+/*天空之城*/
+.theme2 {
+  background-image: url(http://jdme.jd.com/static/jme/images/2.png);
+}
+
+/*流光溢彩*/
+.theme3 {
+  background-image: url(http://jdme.jd.com/static/jme/images/3.png);
+}
+
+.common-wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.nav {
+  width: 100%;
+  height: 64px;
+  position: relative;
+  font-size: 17px;
+  line-height: 44px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  max-width: 640px;
+  padding-top: 20px;
+  background-image: url(http://jdme.jd.com/static/jme/images/0.png);
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 30%;
+  height: 64px;
+  padding-left: 3.125%;
+}
+.back .back-icon {
+  width: 11px;
+  height: 21px;
+  float: left;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAApCAYAAADeWrJ9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTU3NUY4QTQ5OUZGMTFFNDg5RjVEQTFDMTU2NDUwNUQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTU3NUY4QTM5OUZGMTFFNDg5RjVEQTFDMTU2NDUwNUQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZCQTBBM0RGOTdENzExRTRBODlGQzE2RkRDQTY5REQzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkZCQTBBM0UwOTdENzExRTRBODlGQzE2RkRDQTY5REQzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+9wG4FAAAAeVJREFUeNqsl00oRFEUx98MhshHoiwsbChWLGRjxYqVIslCpKQspCxYKEVZUJJkJ1ZKpCjJQiERIbGwoVhQRJTPGM//cF8dpzHevDm3ftO8ue/9/vXm3nPv9dm2bSk2HxgHO2DCIrkSPjBm/7QgaNQUj9i/26SWfFiIp0GMhnhQiGdI/P1fRikeEOJZEOf0RyPuE+J5EOD3eBX3CvGiFHuV9wjxUiixF3mXEC+D+L/uj0TcKcQrIDHcM27FHUK8+p/YrbwdfDLxmhuxG3mbEG+AJLevMlxnixBvgpRIBsBfHc1CvA1SIx22oX5sMiXTabtexKHkDeCDifdAmtcSwS/qhfgApEdT2JwvtUJ8CDKjLcf0UQPemfhYQ0z4sZBWg1i2yMaAgMpybSragpjepyBH47U4ATRp3ljAOcjVkDtUghcWcAnyteREOXhiAdegUEtOlIIHFnALirXkRAm4YwH3JlRFThSBGxbwCMq05EQBuGIBz6BCS07kgQsWQEO2SktumUl1xgKoZNRpyYlscMICqNg1asmJLHDEAmjFatWSExlgXwR0aMkts0Jti4LXrSUnksG6COjXkltmg7QiAoboKKN1bEkw22jeRv1KR8RXs6LNmesg2NI8KlrmLDRltijWlwADAJMc2xDBN75jAAAAAElFTkSuQmCC)
+  no-repeat;
+  background-size: 11px 21px;
+  margin-top: 30px
+}
+.back .back-txt {
+  padding-left: 10px;
+  color: #fff;
+  margin-top: 18px;
+  display: inline-block;
+}
+.title {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 17px;
+  /*height: 64px;*/
+}
+.cont {
+  padding-top: 64px;
+}
+.common-wrapper .plan {
+  position: absolute;
+  right: 5px;
+  color: #fff;
+  width: 80px;
+  font-size: 13px;
+}
+.common-wrapper .plan .p-icon {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 13px;
+  left: 55px;
+  background: url(../../images/plan.png) no-repeat 0 0;
+}

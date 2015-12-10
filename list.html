@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon-precomposed" href="http://st.360buyimg.com/m/images/apple-touch-icon.png?v=jd2015030522"/>
+		<title>员工出游</title>
+		<link rel="stylesheet" href="styles/lib/base.css">
+		<link rel="stylesheet" href="styles/list.css">
+	</head>
+	<body>
+		<div id="main" class="common-wrapper">
+			<nav class="nav">
+				<div class="back" onclick="javascript:history.back(-1);">
+					<i class="back-icon"></i>
+				</div>
+				<div class="title">员工出游</div>
+				<div class="plan">出游计划<div class="p-icon"></div></div>
+			</nav>
+			<section class="cont">
+				<dl class="p-tab-wrap">
+					<dd><span id="pTypeTitle">全部</span><i></i></dd><dd><span id="cityListTitle">城市</span><i></i></dd><dd><span id="purchaseTitle">价格</span><i></i></dd><dd><span id="categoryListTitle">类型</span><i></i></dd>
+				</dl>
+				<dl class="pannel-wrap">
+					<dd id="pType">
+						<p ptypeid="1">部门团建</p>
+						<p ptypeid="2">周末郊游</p>
+						<p ptypeid="3">每日特卖</p>
+						<p ptypeid="4">周边尾房</p>
+					</dd>
+					<dd id="cityList"></dd>
+					<dd id="purchase">
+						<p class="active">不限价格</p>
+						<p purchase="0,99">0~99元</p>
+						<p purchase="10,199">100~199元</p>
+						<p purchase="200,499">200~499元</p>
+						<p purchase="500,-1">500元以上</p>
+					</dd>
+					<dd id="categoryList"></dd>
+				</dl>
+				<div class="g-list">
+					<dl id="productList"></dl>
+					<div class="overlay"></div>
+				</div>
+			</section>
+		</div>
+		<script src="http://jdme.jd.com/open/jdme-sdk-dev.js"></script>
+		<script src="scripts/lib/zepto.js"></script>
+		<script src="scripts/list.js"></script>
+	</body>
+</html>

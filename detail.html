@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon-precomposed" href="http://st.360buyimg.com/m/images/apple-touch-icon.png?v=jd2015030522"/>
+		<title>员工出游</title>
+		<link rel="stylesheet" href="styles/lib/base.css">
+		<link rel="stylesheet" href="styles/lib/swiper.3.1.7.min.css">
+		<link rel="stylesheet" href="styles/detail.css">
+	</head>
+	<body>
+		<div id="main" class="common-wrapper">
+			<nav class="nav">
+				<div class="back" onclick="javascript:history.back(-1);">
+					<i class="back-icon"></i>
+				</div>
+				<div class="title">员工出游</div>
+			</nav>
+			<section class="cont">
+				<div id="bannerSlide" class="swiper-container">
+					<div class="swiper-wrapper"></div>
+					<!-- 如果需要分页器 -->
+					<div id="banner-pagination" class="swiper-pagination"></div>
+				</div>
+				<div class="a-bar"><i></i>员工专享：<label>￥<span id="purchase"></span></label><del>原价￥<span id="price"></span></del><div class="payBtn">立即购买</div></div>
+				<article id="detailImg"></article>
+			</section>
+		</div>
+		<script src="http://jdme.jd.com/open/jdme-sdk-dev.js"></script>
+		<script src="scripts/lib/zepto.js"></script>
+		<script src="scripts/lib/swiper.3.1.7.jquery.min.js"></script>
+		<script src="scripts/detail.js"></script>
+	</body>
+</html>

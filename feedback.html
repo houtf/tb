@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no, minimal-ui" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-icon-precomposed" href="http://st.360buyimg.com/m/images/apple-touch-icon.png?v=jd2015030522"/>
+		<title>出游计划</title>
+		<link rel="stylesheet" href="styles/lib/base.css">
+		<link rel="stylesheet" href="styles/feedback.css?t=1449725035117">
+	</head>
+	<body>
+		<div id="main" class="common-wrapper">
+			<nav class="nav">
+				<div class="back" onclick="javascript:history.back(-1);">
+					<i class="back-icon"></i>
+				</div>
+				<div class="title">出游计划</div>
+			</nav>
+			<section class="cont">
+				<div class="banner"><img src="images/feedback-banner.png"></div>
+				<dl class="panel">
+					<dd><label>活动地点</label><input id="activityLocation" type="text" placeholder="选填"></dd>
+					<dd><label>活动项目</label><input id="activityTheme" type="text" placeholder="选填"></dd>
+					<dd><label>活动时间</label><input id="activityTime" type="text" placeholder="选填"></dd>
+					<dd><label>活动人数</label><input id="activityCount" type="text" placeholder="选填"></dd>
+					<dd><label>经费预算</label><input id="budget" type="text" placeholder="选填"></dd>
+				</dl>
+				<dl class="panel">
+					<dd><label>*联系方式</label><input id="pNum" type="text" value="" placeholder="必填"></dd>
+					<dd><label>*ERP账号</label><span id="erpId"></span></dd>
+				</dl>
+				<div class="submitBtn">提 交</div>
+				<p class="gm">出游小管家<i class="t"></i>咚咚：<span>gehongyu</span></p>
+				<p class="gm">更多服务可随时<i class="m"></i>Email：<email>gehongyu@jd.com</email></p>
+			</section>
+		</div>
+		<!-- <div class="tip"><i class="success"></i><span>提交成功！</span></div> -->
+		<!-- <div class="tip"><i class="fail"></i><span>请填写手机号！</span></div> -->
+		<script src="http://jdme.jd.com/open/jdme-sdk-dev.js"></script>
+		<script src="scripts/lib/zepto.js"></script>
+		<script src="scripts/feedback.js?t=1449725438508"></script>
+	</body>
+</html>
